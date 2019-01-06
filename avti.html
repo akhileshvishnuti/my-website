@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+
+    body, html {
+        height: 100%;
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        }
+    .bg-1 {
+          background-color: #1abc9c; /* Green */
+          color: #ffffff;
+          }
+    .bg-2 {
+          background-color: #474e5d; /* Dark Blue */
+          color: #ffffff;
+          }
+    .bg-3 {
+          background-color: #ffffff; /* White */
+          color: #555555;
+          }
+    .container-fluid {
+          padding-top: 70px;
+          padding-bottom: 70px;
+          }
+    .navbar {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            border: 0;
+            border-radius: 0;
+            margin-bottom: 0;
+            font-size: 12px;
+            letter-spacing: 5px;
+          }
+
+    .navbar-nav li a:hover {
+            color: #1abc9c !important;
+          }
+    .bg-4 {
+          background-color: #2f2f2f;
+          color: #ffffff;
+          }
+    .container {
+          position: relative;
+          width: 50%;
+          font-family: Arial;
+          }
+
+    .image {
+            display: block;
+            width: 30%;
+            top: auto;
+            height: auto;
+            }
+
+    .overlay {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          height: 100%;
+          width: 100%;
+          opacity: 0;
+          transition: 1s ease;
+          background-color: #1abc9c;
+          }
+
+    .container:hover .overlay {
+                              opacity: 1;
+                              }
+
+    .text {
+          color: white;
+          font-size: 20px;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          -webkit-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+          text-align: center;
+        }
+    .text-block {
+                position: absolute;
+                bottom: 10%;
+                right: 10%;
+                left: 10%;
+                opacity:0.7;
+                background-color: black;
+                color: white;
+                padding-left: 20px;
+                padding-right: 20px;
+                }
+    .hero-image {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("a.jpeg");
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            align-items: center;
+          }
+
+    .hero-text {
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+          }
+
+</style>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-default">
+    <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Me</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">WHO</a></li>
+        <li><a href="#">WHAT</a></li>
+        <li><a href="#">WHERE</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="hero-image container-fluid ">
+        <img src="avti.jpeg"class="image img-responsive img-circle" style="display:inline" alt="Profile Picture">
+    </div>
+    <div class="container">
+      <div class="hero-text">
+          <h3 style="font-size:100%"><i>___Hey I'm___</i></h3>
+            <h3><strong>AKHILESH VISHNU T I</strong></h3>
+            <div class="overlay" position="bottom">
+              <div class="text">Hello</div>
+            </div>
+        </div>
+      </div>
+
+
+  <div class="container-fluid bg-2 text-center">
+    <h3>What Am I?</h3>
+    <p>
+    I hail from a simple town in Kannur Kerala, currently pursing my Bachelors at College of Engineering Chengannur as Computer Science & Engineering, Allapuzha. I’d try the best of my ability to organise and prioritise the assigned work. I’d network and connect with more volunteers and get them to participate in more initiatives. I’d engage more people with the social media postings about activities through sharing especially by writing blogs so that I can let them know about each and every event. But you would mostly find me working towards National Service Scheme, A Non Profit Organisation and IEEE, a Proffessional Organisation. I have a determined mind to accomplish my goals
+    </p>
+    <a href="#" class="btn btn-default btn-lg">
+      <span class="glyphicon glyphicon-search"></span> For More...
+    </a>
+  </div>
+
+  <div class="container-fluid bg-3 text-center">
+    <h3>What Am I good at?</h3>
+    <div class="row">
+     <div class="col-sm-4">
+       <img src="avti.jpeg" class=" container img-responsive" style="width:100%" alt="Image">
+       <div class="text-block">
+         <h4>Leadership</h4>
+       </div>
+     </div>
+     <div class="col-sm-4">
+       <img src="avti.jpeg" class="container img-responsive" style="width:100%" alt="Image">
+       <div class="text-block">
+         <h4>Engage in Social Service activities</h4>
+       </div>
+     </div>
+     <div class="col-sm-4">
+       <img src="avti.jpeg" class="container img-responsive" style="width:100%" alt="Image">
+       <div class="text-block">
+         <h4>Team Management</h4>
+       </div>
+   </div>
+  </div>
+
+
+<div class="container">
+
+  <div class="jumbotron">
+    <h1>Bootstrap Tutorial</h1>
+    <p>Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile-first projects on the web.</p>
+  </div>
+  <p>This is some text.</p>
+  <p>This is another text.</p>
+</div>
+<footer class="container-fluid bg-4 text-center">
+  <p>Bootstrap Theme Made By <a href="https://www.w3schools.com">www.w3schools.com</a></p>
+</footer>
+</body>
+</html>
