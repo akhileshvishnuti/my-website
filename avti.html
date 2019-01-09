@@ -8,6 +8,24 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+    function myFunction() {
+      var dots = document.getElementById("dots");
+      var moreText = document.getElementById("more");
+      var btnText = document.getElementById("myID");
+
+      if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.innerHTML = "Read more";
+        moreText.style.display = "none";
+      }
+      else {
+        dots.style.display = "none";
+        btnText.innerHTML = "Read less";
+        moreText.style.display = "inline";
+      }
+    }
+  </script>
   <style>
     body, html {
                 height: 100%;
@@ -42,7 +60,7 @@
     .navbar-nav li a:hover {
       color: #1abc9c !important;
     }
-    .containert {
+    .container-canvas {
             border: 2px solid #ccc;
             background-color: #F0ECFF;
             border-radius: 5px;
@@ -186,6 +204,9 @@
                   background: #211F1F;
                   color: white;
     }
+    #more {
+      display: none;
+    }
   </style>
 </head>
 <body>
@@ -267,17 +288,19 @@
           <div class="container">
             <div class="row">
               <div class="col-sm-6" align="center">
-                <div class="containert">
-                  <img src="nss.jpg" alt="Avatar" style="width:190px">
+                <div class="container-canvas">
+                  <img src="nss.jpg" class="img-responsive" alt="Avatar" style="width:190px">
                   <p><b style="font-size: 150%;">Volunteer Secretary</b></p><p><span><strong>National Service Scheme</strong></span></p>
-                  <p>The NSS is to provide hands on experience to young students in delivering community service. It is to develop their personality through community service</p>
+                  <p  style="font-size:1vw;">The NSS is to provide hands on experience to young students in delivering community service. It is to develop<span id="dots">...</span><span id="more" style="font-size:1vw;"> their personality through community.</span></p>
+                  <button onclick="myFunction()" id="myID">Read more</button>
                 </div>
               </div>
               <div class="col-sm-6" align="center">
-                <div class="containert">
-                  <img src="ieeextreme.jpg" alt="Avatar" style="width:190px">
+                <div class="container-canvas" >
+                  <img src="ieeextreme.jpg" class="img-responsive"alt="Avatar" style="width:190px">
                   <p><b style="font-size: 150%;">Student Ambassador</b></p><p><span><strong>IEEEXtreme 12.0</strong></span></p>
-                  <p>It is an annual hackathon and 24-hour competitive programming challenge in which teams of IEEE Student members. More than 150 student members are participated. </p>
+                  <p  style="font-size:1vw;">It is an annual hackathon and 24-hour competitive programming challenge in which teams of IEEE Student members.<span id="dots">...</span><span id="more" style="font-size:1vw;"> More than 150 student members are participated.</span> </p>
+                  <button onclick="myFunction()" id="myID">Read more</button>
                 </div>
               </div>
             </div>
