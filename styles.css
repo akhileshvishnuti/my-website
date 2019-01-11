@@ -116,7 +116,10 @@ hr {
 .img_wrap img {
     width: 10em;
 }
-
+.img_grid > div {
+  padding-bottom: 2em;
+  border-bottom: solid 1px #ddd;
+}
 .img_wrap span {
     position: absolute;
     bottom: 0;
